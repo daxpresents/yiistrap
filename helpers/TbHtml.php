@@ -3239,7 +3239,7 @@ EOD;
             $items = TbArray::popValue('items', $tabOptions, array());
             if (!empty($items)) {
                 $menuItem['linkOptions']['data-toggle'] = 'dropdown';
-                $menuItem['items'] = self::normalizeTabs($items, $panes, $i);
+                $menuItem['items'] = self::normalizeTabs($items, $panes, $i+1);
             } else {
                 $paneOptions = TbArray::popValue('paneOptions', $tabOptions, array());
                 $id = $paneOptions['id'] = TbArray::popValue('id', $tabOptions, 'tab_' . ++$i);
