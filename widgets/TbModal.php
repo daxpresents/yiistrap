@@ -48,7 +48,7 @@ class TbModal extends CWidget
      * @var mixed includes a modal-backdrop element. Alternatively, specify `static` for a backdrop which doesn't close
      * the modal on click.
      */
-    public $backdrop = true;
+    public $backdrop = "static";
 
     /**
      * @var mixed the remote url. If a remote url is provided, content will be loaded via jQuery's load method and
